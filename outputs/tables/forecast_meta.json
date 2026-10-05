@@ -1,0 +1,12 @@
+{
+  "train_windows": 407477,
+  "train_windows_before_screening": 447970,
+  "val_windows": 41589,
+  "best_epoch": 7,
+  "window_scaling": {
+    "dc_power_kw": 0.02341343919934261,
+    "traffic_gb": 0.25555965934190983,
+    "ran_energy_kwh": 0.022618263900517636,
+    "target_h1": 0.018639047666337616
+  }
+}

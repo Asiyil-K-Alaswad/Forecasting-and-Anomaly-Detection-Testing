@@ -1,0 +1,14 @@
+step,detail,rows_after
+load,"3 export parts concatenated, 63 raw columns, 1,570 sites",867257
+parse dates,mixed-padding M/D/YYYY -> 2025-01-01 .. 2026-06-08,867257
+drop exact duplicates,"152,345 repeated export rows removed",714912
+percent strings,'100%'-style text converted to numeric,714912
+column pruning,"25 columns dropped (all-empty, constant, or exact copies such as Site Fuel == DG Fuel); 36 kept",714912
+merge dual power systems,3 sites with two rectifier systems aggregated per day,714414
+placeholder replacement,"4,120 implausible values set to NaN (physical limits, P/I consistency, NMS zero-placeholders)",714414
+feature engineering,"derived DC bus voltage (P/I), conversion ratio (DC out/AC in), load swing ((Pmax-Pmin)/Pavg), DC/RAN energy ratio",714414
+calendar reindex,"524 days x 1,570 sites; 13.2% of site-days have no export",822680
+join weather,"hourly regional weather -> daily mean/max temperature, humidity, wind, pressure, UV",822680
+join inventory events,"5,589 board power-on events inside the study window",822680
+site selection,"1,332 of 1,570 sites have >= 240 observed training days and >= 30 test days",697968
+missing-value handling,gaps <= 3 days linearly interpolated inside each site; longer gaps break sequences,697968

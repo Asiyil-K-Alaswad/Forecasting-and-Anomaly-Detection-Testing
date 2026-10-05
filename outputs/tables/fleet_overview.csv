@@ -1,0 +1,8 @@
+power_config,site_type,sites,mean_load_kw
+DG,Outdoor,345,5.117904484353797
+DG,Undefined,2,3.6527437084520415
+DG+Solar,Outdoor,88,4.491442656269018
+Grid,Indoor,238,1.6240028448136736
+Grid,Outdoor,638,5.235447411603368
+Grid,Undefined,13,4.836907811558286
+Other,Outdoor,8,3.7199448090692124

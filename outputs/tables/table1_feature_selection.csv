@@ -1,0 +1,11 @@
+Feature group,Observation (within-site r),Recommendation
+DC load power vs current (avg/max/min),P vs I r=0.98; bus voltage is near-constant so P = V·I,Keep Avg DC Load Power as the target; drop currents (redundant). DC Load Energy = 24·P exactly → drop
+Total energy input vs DC load,r=0.41; diverges from output on battery charge/discharge days,Not a forecasting input; used as the denominator of the conversion ratio (health indicator)
+RAN board energy vs LTE / NR energy,"RAN vs LTE r=0.45, vs NR r=0.73","Keep the aggregate RAN Board Energy (independent NMS meter, r=0.65 with load); drop LTE/NR split"
+Traffic vs load,"r=0.28 with load, 0.41 with RAN energy",Retain Traffic as the demand driver
+"Ambient temperature (avg/max), pressure, UV",avg vs max r=0.99; avg temp vs load r=0.44; pressure vs temp r=-0.92,Keep Avg Ambient Temp (cooling-load driver); drop max/pressure (seasonal proxies)
+Ambient humidity,"r=-0.24 with load, -0.56 with temp",Retain: partly independent weather signal
+Battery vs indoor temperature,r=0.83; indoor sensors cover only ~59 % of site-days,Keep Avg Battery Temp (thermal-stress indicator); drop indoor temp/humidity
+Battery discharge vs mains outage / DG duration,"vs DG hours r=-0.82, vs mains outage r=0.12","Keep Battery Discharge (valid for every power configuration); outage, DG, LLVD kept as root-cause indicators"
+DC bus voltage,"r=-0.43 with discharge, 0.08 with load","Retain: voltage-quality indicator, largely independent of load"
+"Conversion ratio, load swing, DC/RAN ratio","max |r| with other selected features: conv 0.11, swing 0.17, DC/RAN 0.35","Retain all three for unique health characterisation (efficiency, load distortion, meter consistency)"

@@ -1,0 +1,13 @@
+{
+  "MAE": 0.2677287421639846,
+  "MSE": 0.40965317655528705,
+  "RMSE": 0.6400415428355312,
+  "R2": 0.8419328180009968,
+  "threshold": 0.9739164041557207,
+  "threshold_if_fitted_on_training_days": 1.178477028999114,
+  "test_site_days_scored": 139538,
+  "test_anomalies": 8301,
+  "test_anomaly_rate": 0.05948917140850521,
+  "train_windows": 418337,
+  "val_windows": 35344
+}
