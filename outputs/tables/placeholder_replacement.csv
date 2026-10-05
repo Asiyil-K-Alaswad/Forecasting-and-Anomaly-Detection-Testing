@@ -1,0 +1,24 @@
+rule,values_replaced
+dc_power_kw outside limits,355
+dc_power_max_kw outside limits,250
+dc_current_a outside limits,278
+dc_current_max_a outside limits,278
+dc_energy_kwh outside limits,340
+energy_in_kwh outside limits,4
+mains_kwh outside limits,1
+dg_kwh outside limits,3
+dg_fuel_l outside limits,3
+fuel_per_kwh outside limits,3
+dg_starts outside limits,4
+mains_outage_n outside limits,4
+batt_temp_c outside limits,4
+batt_temp_max_c outside limits,3
+indoor_temp_c outside limits,197
+indoor_hum outside limits,22
+aux_energy_kwh outside limits,21
+longest_outage_h > 24 h,3
+P/I-inconsistent,973
+ran_energy_kwh=0,510
+lte_energy_kwh=0,0
+nr_energy_kwh=0,0
+traffic_gb=0,864

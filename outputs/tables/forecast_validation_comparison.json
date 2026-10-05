@@ -1,0 +1,13 @@
+{
+  "note": "validation windows (clean partition), window-relative units; MSE",
+  "val_mse_all_h": {
+    "lstm": 1.5477182865142822,
+    "ridge": 2.1513800621032715,
+    "persistence": 2.001716136932373
+  },
+  "val_mse_h1": {
+    "lstm": 0.8655388355255127,
+    "ridge": 0.8119951486587524,
+    "persistence": 1.2908456325531006
+  }
+}

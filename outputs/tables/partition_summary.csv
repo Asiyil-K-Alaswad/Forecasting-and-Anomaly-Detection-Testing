@@ -1,0 +1,11 @@
+partition,count
+Site-days with reported load (modelled sites),669893.0
+"Site-days filled by short-gap interpolation (inputs only, never scored)",19761.0
+Irregular site-days (any consensus outlier),29936.0
+"  ... in forecasting telemetry (load, traffic, RAN energy)",12921.0
+  ... in health indicators (autoencoder features),19566.0
+Forecasting partition: clean 35-day sequences (train),407477.0
+  sequences discarded as irregular (train),40493.0
+Anomaly-detection partition: clean 14-day sequences (train),418337.0
+  sequences discarded as irregular (train),58236.0
+Training-period irregular day rate,0.03639725870473981
